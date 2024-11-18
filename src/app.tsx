@@ -1,3 +1,4 @@
+import React from 'react'
 import { ChangeEvent, useState } from 'react'
 import NewNoteCard from './components/new-note-card'
 import { NoteCard } from './components/note-card'
