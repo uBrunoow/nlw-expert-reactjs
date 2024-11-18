@@ -1,5 +1,4 @@
 import { ChangeEvent, useState } from 'react'
-// import LogoNLWIcon from '../src/assets/logo-nlw-expert'
 import NewNoteCard from './components/new-note-card'
 import { NoteCard } from './components/note-card'
 
@@ -55,7 +54,6 @@ function App() {
 
   return (
     <div className='mx-auto  max-w-6xl my-12 space-y-6 px-5'>
-      {/* <LogoNLWIcon /> */}
       <form className='w-full'>
         <input 
           type="text"
