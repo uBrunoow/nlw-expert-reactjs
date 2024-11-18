@@ -13,7 +13,7 @@ interface NoteCardProps {
   onNoteDeleted: (id: string) => void
 }
 
-export const NoteCard = ({ note, onNoteDeleted }: NoteCardProps) => {
+export const NoteCard: React.FC<NoteCardProps> = ({ note, onNoteDeleted }) => {
   return (
     <Dialog.Root>
     <Dialog.Trigger className= 'flex flex-col rounded-md text-left bg-slate-800 p-5 gap-3 overflow-hidden relative hover:ring-2 hover:ring-slate-600 focus:ring-2 focus:ring-lime-400 focus-visible:ring-2 focus-visible:ring-lime-400 outline-none'>

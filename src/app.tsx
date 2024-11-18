@@ -9,7 +9,7 @@ interface Note {
   content: string
 }
 
-function App() {
+const App: React.FC = () => {
   const [search, setSearch] = useState('')
   const [notes, setNotes] = useState<Note[]>(() => {
 

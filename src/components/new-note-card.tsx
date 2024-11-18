@@ -13,7 +13,7 @@ const SpeechRecognitionAPI =
 
 const speechRecognition = new SpeechRecognitionAPI();
 
-export default function NewNoteCard({ onNoteCreated }: NewNoteProps) {
+const NewNoteCard: React.FC<NewNoteProps> = ({ onNoteCreated }) => {
   const [isRecording, setIsRecording] = useState(false);
   const [shouldShowOnboarding, setShouldShowOnboarding] = useState(true);
   const [content, setContent] = useState("");
@@ -165,3 +165,5 @@ export default function NewNoteCard({ onNoteCreated }: NewNoteProps) {
     </Dialog.Root>
   );
 }
+
+export default NewNoteCard;
